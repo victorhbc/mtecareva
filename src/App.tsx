@@ -31,7 +31,7 @@ function App() {
       <header className="header">
         <nav className="nav">
           <div className="nav-brand">
-            <h2>AquaPure Soluções</h2>
+            <h2>Mtec Areva</h2>
           </div>
           <div className="nav-links">
             <a href="#services">Serviços</a>
@@ -44,7 +44,7 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Água Pura, Vida Pura</h1>
+          <h1>Mtec Areva</h1>
           <p>Soluções profissionais de tratamento de água para necessidades residenciais, comerciais e industriais. Confiança de milhares de clientes há mais de 15 anos.</p>
           <div className="hero-buttons">
             <button className="btn-primary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -119,7 +119,7 @@ function App() {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>Por que Escolher a AquaPure Soluções?</h2>
+              <h2>Por que Escolher a Mtec Areva?</h2>
               <p>Com mais de 15 anos de experiência em tratamento de água, construímos nossa reputação oferecendo soluções confiáveis, eficientes e econômicas.</p>
               <div className="stats">
                 <div className="stat">
@@ -183,7 +183,7 @@ function App() {
                 <p>Emergência: 24 horas</p>
               </div>
             </div>
-            <form className="contact-form" onSubmit={handleSubmit}>
+            {/* <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <input
                   type="text"
@@ -219,7 +219,7 @@ function App() {
                 required
               ></textarea>
               <button type="submit" className="btn-primary">Enviar Mensagem</button>
-            </form>
+            </form> */}
           </div>
         </div>
       </section>
@@ -229,7 +229,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <h3>AquaPure Soluções</h3>
+              <h3>Mtec Areva</h3>
               <p>Seu parceiro confiável para soluções de água limpa e segura.</p>
             </div>
             <div className="footer-links">
@@ -254,7 +254,7 @@ function App() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2024 AquaPure Soluções. Todos os direitos reservados. | Especialistas Licenciados em Tratamento de Água</p>
+            <p>&copy; 2024 Mtec Areva. Todos os direitos reservados. | Especialistas Licenciados em Tratamento de Água</p>
           </div>
         </div>
       </footer>
