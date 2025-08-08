@@ -1,29 +1,7 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  })
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert('Obrigado pelo seu interesse! Entraremos em contato em breve.')
-    setFormData({ name: '', email: '', phone: '', message: '' })
-  }
 
   return (
     <div className="app">
