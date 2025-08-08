@@ -5,6 +5,15 @@ function App() {
 
   return (
     <div className="app">
+      {/* Construction Banner */}
+      <div className="construction-banner">
+        <div className="construction-content">
+          <span className="construction-icon">🚧</span>
+          <span className="construction-text">Site em Construção - Em breve novidades!</span>
+          <span className="construction-icon">🚧</span>
+        </div>
+      </div>
+
       {/* Header */}
       <header className="header">
         <nav className="nav">
@@ -146,8 +155,6 @@ function App() {
               </div>
               <div className="contact-item">
                 <h4>📧 E-mail</h4>
-                <p>info@aquapuresolucoes.com.br</p>
-                <p>emergencia@aquapuresolucoes.com.br</p>
               </div>
               <div className="contact-item">
                 <h4>📍 Áreas de Atendimento</h4>

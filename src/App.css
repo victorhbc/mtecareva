@@ -26,6 +26,53 @@
   color: var(--text-dark);
 }
 
+/* Construction Banner */
+.construction-banner {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  animation: pulse 2s infinite;
+}
+
+.construction-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.construction-icon {
+  font-size: 16px;
+  animation: bounce 1s infinite alternate;
+}
+
+.construction-text {
+  letter-spacing: 0.5px;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.9; }
+  50% { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
+}
+
 /* Container */
 .container {
   max-width: 1200px;
@@ -36,7 +83,7 @@
 /* Header & Navigation */
 .header {
   position: fixed;
-  top: 0;
+  top: 44px;  /* Adjusted to be below the construction banner */
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.95);
@@ -80,7 +127,7 @@
 .hero {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
   color: white;
-  padding: 120px 0 80px;
+  padding: 160px 0 80px;  /* Increased top padding to account for construction banner */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -501,6 +548,23 @@
 }
 
 @media (max-width: 768px) {
+  .construction-banner {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  
+  .construction-content {
+    gap: 8px;
+  }
+  
+  .header {
+    top: 38px;  /* Adjusted for smaller mobile banner */
+  }
+  
+  .hero {
+    padding: 140px 0 60px;  /* Adjusted for mobile */
+  }
+  
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -544,12 +608,34 @@
     padding: 0 15px;
   }
   
-  .hero, .services, .about, .contact {
+  .services, .about, .contact {
     padding: 60px 0;
   }
 }
 
 @media (max-width: 480px) {
+  .construction-banner {
+    font-size: 11px;
+    padding: 8px 0;
+  }
+  
+  .construction-content {
+    gap: 6px;
+    padding: 0 15px;
+  }
+  
+  .construction-text {
+    font-size: 11px;
+  }
+  
+  .header {
+    top: 34px;  /* Further adjusted for very small screens */
+  }
+  
+  .hero {
+    padding: 120px 0 50px;  /* Further adjusted for very small screens */
+  }
+  
   .hero h1 {
     font-size: 2rem;
   }
