@@ -21,7 +21,7 @@ function App() {
     e.preventDefault()
     // Handle form submission here
     console.log('Form submitted:', formData)
-    alert('Thank you for your inquiry! We\'ll contact you soon.')
+    alert('Obrigado pelo seu interesse! Entraremos em contato em breve.')
     setFormData({ name: '', email: '', phone: '', message: '' })
   }
 
@@ -31,12 +31,12 @@ function App() {
       <header className="header">
         <nav className="nav">
           <div className="nav-brand">
-            <h2>AquaPure Solutions</h2>
+            <h2>AquaPure Soluções</h2>
           </div>
           <div className="nav-links">
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#services">Serviços</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact">Contato</a>
           </div>
         </nav>
       </header>
@@ -44,29 +44,29 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Pure Water, Pure Life</h1>
-          <p>Professional water treatment solutions for residential, commercial, and industrial needs. Trusted by thousands for over 15 years.</p>
+          <h1>Água Pura, Vida Pura</h1>
+          <p>Soluções profissionais de tratamento de água para necessidades residenciais, comerciais e industriais. Confiança de milhares de clientes há mais de 15 anos.</p>
           <div className="hero-buttons">
             <button className="btn-primary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-              Get Free Quote
+              Orçamento Grátis
             </button>
             <button className="btn-secondary" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
-              Our Services
+              Nossos Serviços
             </button>
           </div>
         </div>
         <div className="hero-features">
           <div className="feature">
             <span className="feature-icon">💧</span>
-            <span>99.9% Pure Water</span>
+            <span>99,9% Água Pura</span>
           </div>
           <div className="feature">
             <span className="feature-icon">🛡️</span>
-            <span>Licensed & Insured</span>
+            <span>Licenciado & Segurado</span>
           </div>
           <div className="feature">
             <span className="feature-icon">⚡</span>
-            <span>24/7 Emergency Service</span>
+            <span>Atendimento 24h</span>
           </div>
         </div>
       </section>
@@ -74,40 +74,40 @@ function App() {
       {/* Services Section */}
       <section id="services" className="services">
         <div className="container">
-          <h2>Our Water Treatment Services</h2>
-          <p className="section-subtitle">Comprehensive solutions for all your water quality needs</p>
+          <h2>Nossos Serviços de Tratamento de Água</h2>
+          <p className="section-subtitle">Soluções completas para todas as suas necessidades de qualidade da água</p>
           <div className="services-grid">
             <div className="service-card">
               <div className="service-icon">🏠</div>
-              <h3>Residential Systems</h3>
-              <p>Whole-house water filtration, softeners, and reverse osmosis systems for clean, safe drinking water.</p>
+              <h3>Sistemas Residenciais</h3>
+              <p>Filtros de água para toda a casa, abrandadores e sistemas de osmose reversa para água potável limpa e segura.</p>
               <ul>
-                <li>Water softening systems</li>
-                <li>Reverse osmosis units</li>
-                <li>UV sterilization</li>
-                <li>Iron & sulfur removal</li>
+                <li>Sistemas de abrandamento de água</li>
+                <li>Unidades de osmose reversa</li>
+                <li>Esterilização UV</li>
+                <li>Remoção de ferro e enxofre</li>
               </ul>
             </div>
             <div className="service-card">
               <div className="service-icon">🏢</div>
-              <h3>Commercial Solutions</h3>
-              <p>Scalable water treatment systems for businesses, restaurants, hotels, and office buildings.</p>
+              <h3>Soluções Comerciais</h3>
+              <p>Sistemas escaláveis de tratamento de água para empresas, restaurantes, hotéis e edifícios comerciais.</p>
               <ul>
-                <li>High-capacity filtration</li>
-                <li>Commercial softeners</li>
-                <li>Boiler feed water treatment</li>
-                <li>Cooling tower treatment</li>
+                <li>Filtração de alta capacidade</li>
+                <li>Abrandadores comerciais</li>
+                <li>Tratamento de água para caldeiras</li>
+                <li>Tratamento de torres de resfriamento</li>
               </ul>
             </div>
             <div className="service-card">
               <div className="service-icon">🏭</div>
-              <h3>Industrial Treatment</h3>
-              <p>Advanced water treatment for manufacturing, processing plants, and specialized industrial applications.</p>
+              <h3>Tratamento Industrial</h3>
+              <p>Tratamento avançado de água para indústrias, plantas de processamento e aplicações industriais especializadas.</p>
               <ul>
-                <li>Process water treatment</li>
-                <li>Wastewater treatment</li>
-                <li>Chemical dosing systems</li>
-                <li>Custom engineering</li>
+                <li>Tratamento de água de processo</li>
+                <li>Tratamento de águas residuais</li>
+                <li>Sistemas de dosagem química</li>
+                <li>Engenharia personalizada</li>
               </ul>
             </div>
           </div>
@@ -119,35 +119,35 @@ function App() {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>Why Choose AquaPure Solutions?</h2>
-              <p>With over 15 years of experience in water treatment, we've built our reputation on delivering reliable, efficient, and cost-effective solutions.</p>
+              <h2>Por que Escolher a AquaPure Soluções?</h2>
+              <p>Com mais de 15 anos de experiência em tratamento de água, construímos nossa reputação oferecendo soluções confiáveis, eficientes e econômicas.</p>
               <div className="stats">
                 <div className="stat">
-                  <h3>5,000+</h3>
-                  <p>Happy Customers</p>
+                  <h3>5.000+</h3>
+                  <p>Clientes Satisfeitos</p>
                 </div>
                 <div className="stat">
                   <h3>15+</h3>
-                  <p>Years Experience</p>
+                  <p>Anos de Experiência</p>
                 </div>
                 <div className="stat">
-                  <h3>24/7</h3>
-                  <p>Emergency Service</p>
+                  <h3>24h</h3>
+                  <p>Atendimento de Emergência</p>
                 </div>
               </div>
               <div className="certifications">
-                <h4>Certifications & Memberships:</h4>
+                <h4>Certificações e Associações:</h4>
                 <ul>
-                  <li>✓ EPA Licensed Water Treatment Specialist</li>
-                  <li>✓ Water Quality Association Member</li>
-                  <li>✓ NSF Certified Systems</li>
-                  <li>✓ Fully Licensed & Insured</li>
+                  <li>✓ Especialista Licenciado em Tratamento de Água</li>
+                  <li>✓ Membro da Associação de Qualidade da Água</li>
+                  <li>✓ Sistemas Certificados NSF</li>
+                  <li>✓ Totalmente Licenciado e Segurado</li>
                 </ul>
               </div>
             </div>
             <div className="about-image">
               <div className="image-placeholder">
-                <span>Professional Water Treatment Specialist</span>
+                <span>Especialista Profissional em Tratamento de Água</span>
               </div>
             </div>
           </div>
@@ -157,30 +157,30 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="contact">
         <div className="container">
-          <h2>Get Your Free Water Analysis</h2>
-          <p className="section-subtitle">Contact us today for a complimentary water quality assessment</p>
+          <h2>Obtenha Sua Análise Gratuita da Água</h2>
+          <p className="section-subtitle">Entre em contato hoje para uma avaliação gratuita da qualidade da água</p>
           <div className="contact-content">
             <div className="contact-info">
               <div className="contact-item">
-                <h4>📞 Phone</h4>
-                <p>(555) 123-WATER</p>
-                <p>(555) 123-9283</p>
+                <h4>📞 Telefone</h4>
+                <p>(11) 1234-ÁGUA</p>
+                <p>(11) 1234-2482</p>
               </div>
               <div className="contact-item">
-                <h4>📧 Email</h4>
-                <p>info@aquapuresolutions.com</p>
-                <p>emergency@aquapuresolutions.com</p>
+                <h4>📧 E-mail</h4>
+                <p>info@aquapuresolucoes.com.br</p>
+                <p>emergencia@aquapuresolucoes.com.br</p>
               </div>
               <div className="contact-item">
-                <h4>📍 Service Areas</h4>
-                <p>Greater Metropolitan Area</p>
-                <p>Emergency service available 24/7</p>
+                <h4>📍 Áreas de Atendimento</h4>
+                <p>Grande São Paulo e Região</p>
+                <p>Atendimento de emergência 24h</p>
               </div>
               <div className="contact-item">
-                <h4>🕐 Business Hours</h4>
-                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                <p>Saturday: 9:00 AM - 4:00 PM</p>
-                <p>Emergency service: 24/7</p>
+                <h4>🕐 Horário de Funcionamento</h4>
+                <p>Segunda - Sexta: 08:00 - 18:00</p>
+                <p>Sábado: 09:00 - 16:00</p>
+                <p>Emergência: 24 horas</p>
               </div>
             </div>
             <form className="contact-form" onSubmit={handleSubmit}>
@@ -188,7 +188,7 @@ function App() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="Seu Nome"
                   value={formData.name}
                   onChange={handleInputChange}
                   required
@@ -196,7 +196,7 @@ function App() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Seu E-mail"
                   value={formData.email}
                   onChange={handleInputChange}
                   required
@@ -205,20 +205,20 @@ function App() {
               <input
                 type="tel"
                 name="phone"
-                placeholder="Your Phone Number"
+                placeholder="Seu Telefone"
                 value={formData.phone}
                 onChange={handleInputChange}
                 required
               />
               <textarea
                 name="message"
-                placeholder="Tell us about your water treatment needs..."
+                placeholder="Conte-nos sobre suas necessidades de tratamento de água..."
                 rows={5}
                 value={formData.message}
                 onChange={handleInputChange}
                 required
               ></textarea>
-              <button type="submit" className="btn-primary">Send Message</button>
+              <button type="submit" className="btn-primary">Enviar Mensagem</button>
             </form>
           </div>
         </div>
@@ -229,32 +229,32 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <h3>AquaPure Solutions</h3>
-              <p>Your trusted partner for clean, safe water solutions.</p>
+              <h3>AquaPure Soluções</h3>
+              <p>Seu parceiro confiável para soluções de água limpa e segura.</p>
             </div>
             <div className="footer-links">
               <div className="footer-column">
-                <h4>Services</h4>
+                <h4>Serviços</h4>
                 <ul>
-                  <li><a href="#services">Residential Systems</a></li>
-                  <li><a href="#services">Commercial Solutions</a></li>
-                  <li><a href="#services">Industrial Treatment</a></li>
-                  <li><a href="#services">Emergency Service</a></li>
+                  <li><a href="#services">Sistemas Residenciais</a></li>
+                  <li><a href="#services">Soluções Comerciais</a></li>
+                  <li><a href="#services">Tratamento Industrial</a></li>
+                  <li><a href="#services">Atendimento de Emergência</a></li>
                 </ul>
               </div>
               <div className="footer-column">
-                <h4>Company</h4>
+                <h4>Empresa</h4>
                 <ul>
-                  <li><a href="#about">About Us</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#about">Sobre Nós</a></li>
+                  <li><a href="#contact">Contato</a></li>
+                  <li><a href="#">Política de Privacidade</a></li>
+                  <li><a href="#">Termos de Serviço</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2024 AquaPure Solutions. All rights reserved. | Licensed Water Treatment Specialists</p>
+            <p>&copy; 2024 AquaPure Soluções. Todos os direitos reservados. | Especialistas Licenciados em Tratamento de Água</p>
           </div>
         </div>
       </footer>
